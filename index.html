@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./assets/adegaicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adega do Varguinhas</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/icon.png" alt="LOGO" class="logo" onclick="navigate('home')">
+        <h1 onclick="navigate('home')">Adega do Varguinhas</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="navigate('home')">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" onclick="navigate('produtos')">Produtos</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="navigate('vinhos')">Vinhos</a>
+                        <a href="#" onclick="navigate('cervejas')">Cervejas</a>
+                        <a href="#" onclick="navigate('destilados')">Destilados</a>
+                    </div>
+                </li>
+                <li><a href="#" onclick="navigate('sobre')">Sobre</a></li>
+                <li><a href="#" onclick="navigate('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <!-- Conteúdo dinâmico será inserido aqui -->
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Adega do Varguinhas. Todos os direitos reservados.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <div id="loading" class="loading">Carregando...</div>
+
+    <script src="./javascript.js    "></script>
+</body>
+</html>
