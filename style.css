@@ -12,7 +12,7 @@ body {
     cursor: pointer;
 }
 
-.logo:hover{
+.logo:hover {
     opacity: .5;
 }
 
@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -32,6 +33,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -72,7 +74,7 @@ h1 {
     cursor: pointer;
 }
 
-h1:hover{
+h1:hover {
     opacity: .5;
 }
 
@@ -140,4 +142,78 @@ footer .social-media a {
     border: 1px solid #ccc;
     padding: 5px;
     background-color: #fff;
+}
+
+/* Menu Toggle Button */
+.menu-toggle {
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .product-section img {
+        max-width: 150px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-open #nav-links {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .product-section img {
+        max-width: 100px;
+    }
 }
