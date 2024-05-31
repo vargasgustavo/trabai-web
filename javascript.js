@@ -67,3 +67,7 @@ function setupSlides() {
 
     showSlides();
 }
+
+function toggleMenu() {
+    document.querySelector('nav').classList.toggle('menu-open');
+}
